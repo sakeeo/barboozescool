@@ -36,6 +36,9 @@ const AboutUs = () => {
                   Ready for the ultimate mobile party experience? Book now and let the good times roll with Bar Booze's
                   Cool!
               </p>
+
+
+            
               <button
                   onClick={() => window.open('https://wa.me/6285333683334', '_blank')}
                   className="bg-amber-300 text-black mt-4 text-lg px-6 py-3 rounded border border-amber-300 hover:bg-transparent hover:text-amber-300 transition duration-300">
