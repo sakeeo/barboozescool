@@ -58,11 +58,11 @@ const Carousel: React.FC = () => {
 
                             {/* CTA */}
                             <div>
-                                <p className="text-lg mb-3">Join Bar Booze'S for a fun-filled 2-hour cruising tour in
-                                    Kuta and Legian</p>
+                                <p className="text-lg mb-3">Join Us for a fun filled 2 hour cruising tour</p>
                                 <button
+                                    onClick={() => window.open('https://wa.me/6285333683334', '_blank')} // Replace with your phone number
                                     className="bg-transparent text-white text-lg px-6 py-3 rounded border border-amber-300 hover:bg-amber-300 hover:text-black transition duration-300">
-                                    Book Now
+                                    Book Now!
                                 </button>
                             </div>
                         </div>

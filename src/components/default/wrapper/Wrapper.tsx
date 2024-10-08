@@ -11,7 +11,16 @@ export default function (
                 <Navbar />
                 <div>{props.children}</div>
                 <Footer/>
+                {/* Tailwind smooth scroll */}
+                <style>{`
+                    html {
+                      scroll-behavior: smooth;
+                    }
+                  `}</style>
+
             </div>
+
+
 
     )
 }

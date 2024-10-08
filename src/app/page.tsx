@@ -6,6 +6,9 @@ import TourDepartureArrival from "@/components/home/tourDepartureArrival/TourDep
 import Facilities from "@/components/home/facilities/Facilities";
 import Gallery from "@/components/home/gallery/Gallery";
 import Contact from "@/components/home/contact/Contact";
+import Route from "@/components/home/route/Route";
+import {SmallDashOutlined} from "@ant-design/icons";
+import Divider from "@/components/default/Divider/Divider";
 
 export default function Home() {
   return (
@@ -13,10 +16,13 @@ export default function Home() {
     <div>
       <Hero/>
       <AboutUs/>
+      <Divider/>
       <Services/>
       <TourDepartureArrival/>
+      <Route/>
       <Facilities/>
       <Gallery/>
+      <Divider/>
       <Contact/>
     </div>
   </Wrapper>

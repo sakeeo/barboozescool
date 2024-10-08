@@ -1,3 +1,5 @@
+import {StarOutlined} from "@ant-design/icons";
+
 const servicesData = [
     {
         title: "Beer Package",
@@ -7,6 +9,7 @@ const servicesData = [
                 "Snack, Soft Drink, Water",
                 "Music by request, Wi-Fi, CCTV, Ceiling Fan, Port Charger, Toilet",
             ],
+        icon: <StarOutlined className="text-amber-500 text-3xl" />,
     },
     {
         title: "Smirnoff Package",
@@ -16,6 +19,7 @@ const servicesData = [
             "Snack, Soft Drink, Water",
             "Music by request, Wi-Fi, CCTV, Ceiling Fan, Port Charger, Toilet",
         ],
+        icon: <StarOutlined className="text-amber-500 text-3xl" />,
     },
     {
         title: "Wine Package",
@@ -24,7 +28,8 @@ const servicesData = [
             "1:30 to 2:00 hour Unlimited Wines, Smirnoff Ice",
             "Snack, Soft Drink, Water",
             "Music by request, Wi-Fi, CCTV, Ceiling Fan, Port Charger, Toilet",
-        ]
+        ],
+        icon: <StarOutlined className="text-amber-500 text-3xl" />,
     },
     {
         title: "Champagne Package",
@@ -33,7 +38,8 @@ const servicesData = [
             "1:30 to 2:00 hour Unlimited Champagne, Smirnoff Ice",
             "Snack, Soft Drink, Water",
             "Music by request, Wi-Fi, CCTV, Ceiling Fan, Port Charger, Toilet",
-        ]
+        ],
+        icon: <StarOutlined className="text-amber-500 text-3xl" />,
     },
     {
         title: "Soft Package",
@@ -42,19 +48,23 @@ const servicesData = [
             "1:30 to 2:00 hour Unlimited Coke, Sprite (Lemonade), Fanta",
             "Snack, Soft Drink, Water",
             "Music by request, Wi-Fi, CCTV, Ceiling Fan, Port Charger, Toilet",
-        ]
+        ],
+        icon: <StarOutlined className="text-amber-500 text-3xl" />,
     },
 ];
 
 
 const Services = () => {
     return (
-        <div className="p-6 bg-gray-100">
-            <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
+        <section id="Services" className="p-5 bg-gray-100 pt-28">
+            <h2 className="text-3xl font-bold text-center mb-8">Packages</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {servicesData.map((service, index) => (
                     <div key={index} className="bg-white shadow-lg rounded-lg p-4">
-                        <h3 className="text-xl font-semibold">{service.title}</h3>
+                        <div className="flex items-center mb-2">
+                            {service.icon} {/* Display the icon here */}
+                            <h3 className="text-xl font-semibold ml-2">{service.title}</h3>
+                        </div>
                         <p className="text-lg text-amber-600 font-bold">{service.price}</p>
                         <ul className="mt-2 text-gray-600 list-disc list-inside">
                             {service.details.map((detail, detailIndex) => (
@@ -64,7 +74,7 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-        </div>
+        </section>
     );
 };
 

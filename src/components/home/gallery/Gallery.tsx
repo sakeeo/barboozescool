@@ -10,7 +10,7 @@ const galleryImages = [
 
 export default function (){
     return (
-        <section className="py-16 bg-gray-100">
+        <section id="Gallery" className="bg-gray-100 p-5 pt-28">
             <div className="max-w-6xl mx-auto text-center">
                 <h2 className="text-3xl font-bold text-gray-800 mb-8">Gallery</h2>
                 <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
