@@ -14,7 +14,7 @@ const facilities = [
 
 const Facilities = () => {
     return (
-        <section id="Facilities" className="p-5 bg-amber-300">
+        <section id="Facilities" className="p-10 bg-amber-300">
             <div className="max-w-6xl mx-auto text-center">
                 <h2 className="text-3xl font-bold text-gray-800 mb-8">Facilities</h2>
                 <ul className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">

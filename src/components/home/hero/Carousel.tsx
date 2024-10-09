@@ -2,10 +2,6 @@
 import React, { useState } from 'react';
 import Image from 'next/image'; // Masih menggunakan Image dari next/image
 
-
-
-
-
 const Carousel: React.FC = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -56,10 +52,6 @@ const Carousel: React.FC = () => {
                             {/* Header */}
                             <h2 className="text-4xl font-bold mb-3">BAR Booze'S
                                 Cool</h2> {/* Ganti dengan header yang sesuai */}
-
-
-
-                            
 
                             {/* Tagline */}
                             <p className="text-xl mb-5">Don’t stay sober!</p> {/* Ganti dengan tagline yang sesuai */}

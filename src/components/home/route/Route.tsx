@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function (){
     return (
-        <section id="TourRoute" className="p-5 bg-gray-100">
+        <section id="TourRoute" className="p-10 bg-gray-100">
             <h2 className="text-3xl font-bold text-center mb-8">Tour Route</h2>
             <div className="flex justify-center">
                 <Image

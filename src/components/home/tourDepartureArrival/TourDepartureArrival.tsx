@@ -1,4 +1,5 @@
 import React from 'react';
+import {FieldTimeOutlined} from "@ant-design/icons";
 
 const TourDepartureArrival = () => {
     const schedule = [
@@ -9,7 +10,7 @@ const TourDepartureArrival = () => {
     ];
 
     return (
-        <section id={"TourDepartureArrival"} className="w-full p-5 bg-amber-300">
+        <section id={"TourDepartureArrival"} className="w-full p-10 bg-amber-300">
             <div className="max-w-4xl mx-auto text-center">
                 <h2 className="text-3xl font-bold text-gray-800 mb-8">Tour Schedule</h2>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-6">
@@ -19,6 +20,7 @@ const TourDepartureArrival = () => {
                             className="bg-white shadow-lg rounded-lg py-6 px-4 hover:scale-105 transform transition duration-200"
                         >
                             <div className="flex justify-center items-center space-x-6">
+                                <FieldTimeOutlined className={"text-2xl"} />
                                 <span className="text-xl font-semibold text-black-500">{item.departure}</span>
                                 <span className="text-2xl font-bold text-gray-700">→</span>
                                 <span className="text-xl font-semibold text-black-500">{item.arrival}</span>
