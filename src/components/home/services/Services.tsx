@@ -57,13 +57,13 @@ const servicesData = [
 const Services = () => {
     return (
         <section id="Services" className="p-10 bg-gray-100 pt-28">
-            <h2 className="text-3xl font-bold text-center mb-8">Packages</h2>
+            <h2 className="text-3xl font-bold text-black text-center mb-8">Packages</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {servicesData.map((service, index) => (
                     <div key={index} className="bg-white shadow-lg rounded-lg p-4">
                         <div className="flex items-center mb-2">
                             {service.icon} {/* Display the icon here */}
-                            <h3 className="text-xl font-semibold ml-2">{service.title}</h3>
+                            <h3 className="text-xl text-gray-600 font-semibold ml-2">{service.title}</h3>
                         </div>
                         <p className="text-lg text-amber-600 font-bold">{service.price}</p>
                         <ul className="mt-2 text-gray-600 list-disc list-inside">

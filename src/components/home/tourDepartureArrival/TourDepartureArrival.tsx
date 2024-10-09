@@ -20,10 +20,10 @@ const TourDepartureArrival = () => {
                             className="bg-white shadow-lg rounded-lg py-6 px-4 hover:scale-105 transform transition duration-200"
                         >
                             <div className="flex justify-center items-center space-x-6">
-                                <FieldTimeOutlined className={"text-2xl"} />
-                                <span className="text-xl font-semibold text-black-500">{item.departure}</span>
+                                <FieldTimeOutlined className={"text-2xl text-gray-700"} />
+                                <span className="text-xl font-semibold text-gray-700">{item.departure}</span>
                                 <span className="text-2xl font-bold text-gray-700">→</span>
-                                <span className="text-xl font-semibold text-black-500">{item.arrival}</span>
+                                <span className="text-xl font-semibold text-gray-700">{item.arrival}</span>
                             </div>
                         </li>
                     ))}

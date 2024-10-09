@@ -40,7 +40,7 @@ export default function (
                     <li className="hidden lg:inline-flex px-4 py-2 cursor-pointer hover:bg-amber-300">
                         <a href="#Contact">Contact</a>
                     </li>
-                    <li className="lg:hidden inline-flex px-4 py-2 cursor-pointer hover:bg-amber-300">
+                    <li className="lg:hidden inline-flex px-4 py-2 text-black cursor-pointer hover:bg-amber-300">
                         <MenuOutlined onClick={toggleMenu}/>
                     </li>
                 </ul>
@@ -52,7 +52,7 @@ export default function (
                     isMenuOpen ? 'translate-x-0' : '-translate-x-full'
                 } transition-transform duration-300 ease-in-out shadow-lg z-50`}
             >
-                <div className="p-4 text-xl font-semibold">BAR Booze'S Cool</div>
+                <div className="p-4 text-xl text-black font-semibold">BAR Booze'S Cool</div>
                 <ul className="space-y-4 p-3">
                     <li>
                         <a href="#Hero" className="hover:bg-amber-300 block px-4 py-2 rounded-md">Home</a>

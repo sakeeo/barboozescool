@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function (){
     return (
         <section id="TourRoute" className="p-10 bg-gray-100">
-            <h2 className="text-3xl font-bold text-center mb-8">Tour Route</h2>
+            <h2 className="text-3xl text-black font-bold text-center mb-8">Tour Route</h2>
             <div className="flex justify-center">
                 <Image
                     src="/Images/route.jpg" // Replace with your actual image path
